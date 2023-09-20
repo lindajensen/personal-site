@@ -1,0 +1,141 @@
+
+/* Vilken nytta gör det här?
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #edd6ca;
+    color: #202548
+}
+*/
+
+body {
+    background-color: #ebf5f1;
+    color: #202548;
+    font-family: 'Bitter', sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
+.grid-container {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top-header {
+    padding-left: 14px;
+}
+
+.navbar {
+    background-color: #202548;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.movie-poster {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.movie-poster:hover img {
+    transform: scale(1.1);
+}
+
+.movie-info {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s, left 0.3s;
+}
+
+.movie-info:hover {
+    opacity: 1;
+    left: 0;
+}
+
+.movie-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-info li {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.movie-info p {
+    line-height: 1.5;
+    margin-bottom: 2em;
+    margin-right: 2em;
+}
+
+.movie-info h4 {
+    margin-bottom: .5em;
+}
+
+.footer {
+    background-color: #cc3f47;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
